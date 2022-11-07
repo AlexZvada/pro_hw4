@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var userNumber=+prompt('Введите положительное число');
+        
+        if ( userNumber === userNumber && Number.isInteger(userNumber)){
+            var tree="";
+            for ( var i=1; i<=userNumber; i++ ){
+                for( var y=1; y<=i; y++){
+                    for( var x=1; x<=y; x++){
+                        tree+="*";
+                    }
+                }
+                tree+="\n";
+            }
+            console.log(tree);
+        }
+        else{
+            alert('Введите положительное число')
+        }
+    </script>
+</body>
+</html>
